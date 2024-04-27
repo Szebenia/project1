@@ -1,40 +1,116 @@
-
-body{
-    margin: 0;
+html {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+body {
+  margin: 0;
+  background-color: burlywood;
+}
+
 .head-container {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
-    background-color: blueviolet;
-    height: 200px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: blueviolet;
+  height: 70px;
+  overflow: hidden;
 }
 
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 100%;
+
+  padding: 0px 15px 0px 10px;
+}
 .left-menu {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    height: 100%;
-    /* width: 100px; */
-    background-color: green;
+  justify-content: center;
+  gap: 5px;
+  height: 100%;
+  /* width: 100px; */
+  background-color: green;
 }
 
 .main-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    background-color: blue;
-    color: blanchedalmond;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: aliceblue;
 }
 
 .right-menu {
-    height: 100%;
-    width: 100px;
-    background-color:green;
-    color: blanchedalmond;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 100%;
+  background-color: green;
 }
+
+.menu a {
+  text-decoration: none;
+  padding: 10px;
+  color: aliceblue;
+}
+.menu a:hover {
+  background-color: white;
+  color: blueviolet;
+  border-radius: 5px;
+  scale: 120%;
+}
+.menu a:active {
+  background-color: white;
+  color: blueviolet;
+  border-radius: 5px;
+  scale: 90%;
+}
+
+.main-container {
+  margin: 40px;
+}
+/* Kártya beállítás START ---------- */
+.action-cards {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  width: 300px;
+  height: 500px;
+  padding: 10px;
+}
+.card p {
+    text-align: justify;
+}
+.card img {
+    width: 100px;
+}
+
+.description::first-line {
+ font-weight: 900;
+
+}
+
+.card-icon {
+display: flex;
+align-items: center;
+
+}
+.card-icon img {
+    width: 20px;
+    height: 25px;
+}
+
+/* Kártya beállítás END ---------- */
