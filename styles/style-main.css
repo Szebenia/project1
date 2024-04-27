@@ -106,11 +106,20 @@ body {
 .card-icon {
 display: flex;
 align-items: center;
+flex-flow: column nowrap;
+width: 100%;
 
 }
 .card-icon img {
     width: 20px;
     height: 25px;
+}
+.card-icon div {
+    display: flex;
+    margin: 2px;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(to right, burlywood, rgba(137, 43, 226, 0.61));
 }
 
 /* Kártya beállítás END ---------- */
