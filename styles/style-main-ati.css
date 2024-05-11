@@ -1,0 +1,184 @@
+html {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  margin: 0;
+  background-color: burlywood;
+}
+
+.head-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: blueviolet;
+  height: 70px;
+  overflow: hidden;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 100%;
+
+  padding: 0px 15px 0px 10px;
+}
+.left-menu {
+  justify-content: center;
+  gap: 5px;
+  height: 100%;
+  /* width: 100px; */
+  background-color: green;
+}
+
+.main-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: aliceblue;
+}
+
+.right-menu {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 100%;
+  background-color: green;
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 10px;
+  color: aliceblue;
+}
+.menu a:hover {
+  background-color: white;
+  color: blueviolet;
+  border-radius: 5px;
+  scale: 120%;
+}
+.menu a:active {
+  background-color: white;
+  color: blueviolet;
+  border-radius: 5px;
+  scale: 90%;
+}
+
+.main-container {
+  margin: 40px;
+}
+/* Kártya beállítás START ---------- */
+.action-cards {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 300px;
+  height: 500px;
+  padding: 10px;
+  z-index: 2;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.24);
+  transform: rotateX(0deg);
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+
+.mokus1.card:hover {
+  scale: 120%;
+  z-index: 4;
+  background-color: aqua;
+  transform: rotateX(360deg);
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+
+.blanket {
+  position: absolute;
+  top: 250px;
+  left: 0px;
+  height: 100%;
+  width: 100vw;
+  z-index: 1;
+}
+
+.blanket:has( ~ .card:hover) {
+  position:absolute;
+  background-color: rgba(128, 128, 128, 0.8);
+  z-index: 3;
+}
+
+.mokus2.card:hover {
+  scale: 120%;
+  z-index: 4;
+  background-color: aqua;
+  transform: rotateX(360deg);
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+
+.mokus3.card:hover {
+  scale: 120%;
+  z-index: 4;
+  background-color: aqua;
+  transform: rotateX(360deg);
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+
+.mokus4.card:hover {
+  scale: 115%;
+  z-index: 4;
+  background-color: aqua;
+  transform: rotateX(360deg);
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+.card p {
+  text-align: justify;
+}
+.card img {
+  width: 100px;
+}
+
+.description::first-line {
+  font-weight: 900;
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+.card-icon img {
+  width: 20px;
+  height: 25px;
+}
+.card-icon div {
+  display: flex;
+  margin: 2px;
+  align-items: center;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    burlywood,
+    rgba(137, 43, 226, 0.61)
+  );
+}
+
+/* Kártya beállítás END ---------- */
